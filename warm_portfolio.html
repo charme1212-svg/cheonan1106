@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7f0">
+  <meta name="description" content="천안시 서북구청 주민복지과에서 일하는 워킹맘의 개인 포트폴리오입니다.">
+  <title>나의 포트폴리오 | 일상에 따뜻함을 더하는 기록</title>
+  <style>
+    :root{color-scheme:light;--ink:#45392f;--sub:#796e65;--line:#eaded0;--primary:#a65f49;--primary-dark:#874632;--soft:#fff0e4;--canvas:#fbf7f0;--white:#fffdf9;--shadow:0 22px 55px rgba(102,68,44,.11)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--canvas);color:var(--ink);font-family:Pretendard,"Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(1120px,calc(100% - 48px));margin:auto}
+    .site-header{position:sticky;top:0;z-index:10;background:rgba(251,247,240,.9);border-bottom:1px solid rgba(226,210,194,.65);backdrop-filter:blur(16px)}.header-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;gap:12px;align-items:center;font-size:15px;font-weight:800;letter-spacing:-.4px}.brand-mark{width:37px;height:37px;display:grid;place-items:center;background:#b56b53;color:white;border-radius:50%;font-size:13px;box-shadow:0 5px 12px rgba(155,86,65,.17)}.nav{display:flex;gap:26px;font-weight:650;font-size:13px;color:#75675d}.nav a:hover,.nav a:focus-visible{color:var(--primary)}
+    .hero{padding:88px 0 75px;display:grid;grid-template-columns:1.1fr .9fr;gap:57px;align-items:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2.3px;color:var(--primary);text-transform:uppercase}.hero h1{margin:20px 0 25px;font-size:clamp(38px,5vw,64px);line-height:1.3;letter-spacing:-3.3px;font-weight:800;word-break:keep-all}.hero h1 span{color:var(--primary)}.hero-desc{max-width:530px;margin:0;color:var(--sub);font-size:17px;word-break:keep-all}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}.btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:28px;padding:12px 22px;font-weight:750;font-size:13px;border:1px solid transparent;transition:transform .16s,background .16s,box-shadow .16s;cursor:pointer}.btn:hover{transform:translateY(-2px)}.btn:active{transform:scale(.98)}.btn.primary{background:var(--primary);color:white;box-shadow:0 10px 24px rgba(166,95,73,.21)}.btn.primary:hover{background:var(--primary-dark)}.btn.secondary{background:#fffdf9;border-color:#e6d7c7}.btn.secondary:hover{background:var(--soft)}
+    .hero-art{min-height:400px;position:relative;display:flex;align-items:center;justify-content:center}.art-frame{position:relative;width:min(100%,425px);aspect-ratio:1.04;border-radius:46% 46% 36px 36px;background:linear-gradient(140deg,#f5d7be 0%,#ffeadd 49%,#ead4bd 100%);overflow:hidden;box-shadow:var(--shadow)}.art-frame:before{content:"";position:absolute;width:265px;height:265px;right:-75px;top:-90px;border-radius:50%;border:44px solid rgba(255,253,247,.33)}.art-frame:after{content:"";position:absolute;width:290px;height:290px;left:-110px;bottom:-135px;border-radius:50%;background:rgba(255,255,255,.27)}.art-caption{position:absolute;left:38px;top:56px;z-index:1}.art-caption small{display:block;color:#9e604a;font-size:12px;font-weight:750;letter-spacing:1px}.art-caption strong{display:block;margin-top:9px;font-size:31px;line-height:1.4;letter-spacing:-1.3px}.art-symbol{position:absolute;bottom:40px;right:38px;display:grid;place-items:center;width:163px;height:163px;border:1px solid rgba(255,255,255,.8);border-radius:44% 56% 48% 52%;background:rgba(255,255,255,.45);transform:rotate(-10deg)}.art-symbol svg{width:102px;height:102px;transform:rotate(10deg)}.floating-tag{position:absolute;left:-14px;bottom:48px;z-index:2;background:#fffefa;padding:15px 19px;border-radius:18px;box-shadow:0 13px 28px rgba(115,78,48,.13);font-size:12px;font-weight:800;color:#87614c}.floating-tag .dot{display:inline-block;width:8px;height:8px;margin-right:8px;background:#9aa97b;border-radius:50%}
+    .section{padding:29px 0 70px}.section-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:24px}.section-kicker{font-size:12px;font-weight:800;color:var(--primary);letter-spacing:1.5px}.section h2{font-size:clamp(25px,3.2vw,34px);line-height:1.35;letter-spacing:-1.1px;margin:8px 0 0}.section-note{font-size:13px;color:var(--sub);margin:0}.about-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.info-card{background:var(--white);border:1px solid var(--line);border-radius:25px;padding:28px 26px;min-height:225px;box-shadow:0 8px 25px rgba(112,75,46,.035);transition:transform .2s,box-shadow .2s}.info-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.info-icon{width:48px;height:48px;display:grid;place-items:center;background:#f8e7d9;border-radius:50%;color:var(--primary);font-size:23px}.info-label{font-size:12px;color:#9b8575;font-weight:800;margin:24px 0 5px;letter-spacing:.2px}.info-card h3{font-size:19px;line-height:1.45;letter-spacing:-.7px;margin:0 0 9px}.info-card p{font-size:13px;line-height:1.8;margin:0;color:var(--sub);word-break:keep-all}
+    .philosophy{display:grid;grid-template-columns:1fr auto;align-items:center;gap:22px;background:#826b56;color:#fffdf8;border-radius:26px;padding:39px 43px;margin-top:18px;overflow:hidden;position:relative}.philosophy:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.19);border-radius:50%;width:330px;height:330px;right:-130px;top:-190px;pointer-events:none}.philosophy .section-kicker{color:#ffdfc9}.philosophy h3{font-size:23px;letter-spacing:-.8px;margin:10px 0}.philosophy p{color:#f9eadd;max-width:660px;margin:0;font-size:14px;word-break:keep-all}.philosophy-icon{font-size:43px;opacity:.9}
+    .project-section{padding-top:22px}.project-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.project-card{display:flex;flex-direction:column;min-height:224px;padding:26px;background:#fffdf9;border:1px solid var(--line);border-radius:25px;transition:transform .16s,border-color .16s,box-shadow .16s}.project-card:hover,.project-card:focus-visible{transform:translateY(-5px);border-color:#d3aa91;box-shadow:var(--shadow);outline:none}.project-top{display:flex;justify-content:space-between;align-items:center}.project-num{font-size:35px;font-weight:850;color:#e5cabc;line-height:1;letter-spacing:-2px}.project-arrow{width:36px;height:36px;display:grid;place-items:center;border-radius:50%;background:#f9ede2;color:var(--primary);font-size:18px;transition:background .16s,color .16s}.project-card:hover .project-arrow{background:var(--primary);color:white}.project-card h3{font-size:19px;letter-spacing:-.7px;margin:33px 0 4px}.project-card p{font-size:13px;color:var(--sub);margin:0}.project-card .project-link{font-size:12px;color:var(--primary);font-weight:800;margin-top:auto;padding-top:19px}.tip{margin:19px 0 0;font-size:12px;color:#8b7d71}.tip code{font-size:12px;background:#f4e9dc;padding:2px 5px;border-radius:4px}
+    .footer{margin-top:18px;border-top:1px solid var(--line);padding:29px 0 38px;color:#928173;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:10px}.footer strong{color:#796250}
+    :focus-visible{outline:3px solid #dba58b;outline-offset:4px}@media(max-width:900px){.hero{grid-template-columns:1fr;gap:28px;padding:55px 0 35px}.hero-art{min-height:310px}.art-frame{max-width:500px;aspect-ratio:1.5;border-radius:42% 42% 30px 30px}.hero h1{letter-spacing:-2.5px}.floating-tag{left:8%}.about-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid .info-card:last-child{grid-column:span 2}.project-grid{gap:12px}.project-card{padding:21px}}@media(max-width:600px){.container{width:calc(100% - 36px)}.header-inner{height:64px}.brand{font-size:13px;gap:8px}.brand-mark{width:32px;height:32px}.nav{gap:11px;font-size:11px}.hero{padding-top:48px}.hero h1{font-size:38px;letter-spacing:-2.2px}.hero-desc{font-size:15px}.hero-art{min-height:280px}.art-frame{aspect-ratio:1.18;border-radius:43% 43% 24px 24px}.art-caption{left:25px;top:37px}.art-caption strong{font-size:27px}.art-symbol{width:116px;height:116px;right:20px;bottom:20px}.art-symbol svg{width:72px;height:72px}.floating-tag{bottom:22px;left:0;padding:11px 13px}.section{padding-bottom:46px}.section-head{align-items:start;flex-direction:column;gap:8px}.about-grid,.project-grid{grid-template-columns:1fr}.about-grid .info-card:last-child{grid-column:auto}.info-card{min-height:unset;padding:23px}.info-label{margin-top:17px}.philosophy{grid-template-columns:1fr;padding:28px 25px}.philosophy-icon{display:none}.philosophy h3{font-size:21px}.project-card{min-height:185px}.project-card h3{margin-top:22px}.footer-inner{flex-direction:column;gap:4px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="홈으로 이동"><span class="brand-mark">MY</span><span>MY PORTFOLIO</span></a>
+      <nav class="nav" aria-label="주 메뉴"><a href="#about">소개</a><a href="#values">나의 가치</a><a href="#projects">페이지 바로가기</a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div>
+          <div class="eyebrow">A little about me</div>
+          <h1 id="hero-title">작은 마음을 모아,<br><span>따뜻한 하루를 만듭니다.</span></h1>
+          <p class="hero-desc">안녕하세요. 천안시 서북구청 주민복지과에서 일하고, 두 딸과 함께 하루하루 성장하는 워킹맘입니다. 책임감과 따뜻한 마음으로 저만의 이야기를 쌓아가고 있습니다.</p>
+          <div class="hero-actions"><a class="btn primary" href="#about">저를 소개합니다 <span aria-hidden="true">↗</span></a><a class="btn secondary" href="#projects">페이지 살펴보기 <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="hero-art" aria-label="일과 일상을 표현한 장식 그림">
+          <div class="art-frame">
+            <div class="art-caption"><small>CARE · FAMILY · EVERYDAY</small><strong>소소한 일상 속<br>따뜻한 발걸음</strong></div>
+            <div class="art-symbol" aria-hidden="true">
+              <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M50 84C28 69 15 57 15 41c0-11 8-19 19-19 7 0 13 4 16 10 4-6 10-10 17-10 10 0 18 8 18 19 0 16-13 28-35 43Z" fill="#f6bfa6" stroke="#aa6650" stroke-width="3" stroke-linejoin="round"/><path d="M35 42c0-5 3-9 8-11" stroke="#fff8f0" stroke-width="4" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="floating-tag"><span class="dot"></span>A little warmth, every day</div>
+        </div>
+      </section>
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-head"><div><div class="section-kicker">ABOUT ME</div><h2 id="about-title">저는 이런 사람입니다</h2></div><p class="section-note">일과 일상 속에서 발견한 나의 모습</p></div>
+        <div class="about-grid">
+          <article class="info-card"><div class="info-icon" aria-hidden="true">▤</div><div class="info-label">MY WORK</div><h3>주민의 일상과 가까운 곳에서</h3><p>천안시 서북구청 주민복지과에 근무하며, 주민을 생각하는 마음으로 맡은 일을 해나갑니다.</p></article>
+          <article class="info-card"><div class="info-icon" aria-hidden="true">♡</div><div class="info-label">MY FAMILY</div><h3>두 딸의 엄마, 그리고 나</h3><p>두 딸을 키우는 워킹맘으로서 일과 가정 사이의 소중한 균형을 만들어갑니다.</p></article>
+          <article class="info-card"><div class="info-icon" aria-hidden="true">✦</div><div class="info-label">MY PERSONALITY</div><h3>ISFJ · 세심함과 책임감</h3><p>저를 표현하는 MBTI는 ISFJ입니다. 주변을 세심히 살피고 꾸준히 실천하는 태도를 중요하게 여깁니다.</p></article>
+        </div>
+        <div class="philosophy" id="values"><div><div class="section-kicker">WHAT MATTERS TO ME</div><h3>작은 배려와 꾸준한 실천의 힘을 믿습니다.</h3><p>업무에서는 신뢰를, 가정에서는 따뜻함을, 일상에서는 성장을 소중히 여기며 저다운 속도로 나아가고 싶습니다.</p></div><div class="philosophy-icon" aria-hidden="true">✳</div></div>
+      </section>
+      <section class="section project-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-head"><div><div class="section-kicker">EXPLORE MORE</div><h2 id="projects-title">나의 페이지</h2></div><p class="section-note">앞으로 채워갈 세 가지 공간</p></div>
+        <div class="project-grid">
+          <a class="project-card" href="1.html" aria-label="1번 페이지 열기"><div class="project-top"><span class="project-num">01</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>페이지 1</h3><p>첫 번째 이야기를 담을 공간</p><span class="project-link">1.html로 이동 →</span></a>
+          <a class="project-card" href="2.html" aria-label="2번 페이지 열기"><div class="project-top"><span class="project-num">02</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>페이지 2</h3><p>두 번째 이야기를 담을 공간</p><span class="project-link">2.html로 이동 →</span></a>
+          <a class="project-card" href="3.html" aria-label="3번 페이지 열기"><div class="project-top"><span class="project-num">03</span><span class="project-arrow" aria-hidden="true">↗</span></div><h3>페이지 3</h3><p>세 번째 이야기를 담을 공간</p><span class="project-link">3.html로 이동 →</span></a>
+        </div>
+        <p class="tip">※ 1·2·3 버튼은 각각 <code>1.html</code>, <code>2.html</code>, <code>3.html</code>로 연결됩니다. 해당 파일은 추후 <code>index.html</code>과 같은 폴더에 추가해 주세요.</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span><strong>MY PORTFOLIO</strong> · 나를 기록하는 공간</span><span>Made with care, one day at a time.</span></div></footer>
+</body>
+</html>
